@@ -59,6 +59,8 @@ def main_loop():
 
     st.text("Number of Beetles = " + str(counter))
 
+    st.download_button(label = "Download Output", data = final_image, mime="image/png")
+
 
 if __name__ == '__main__':
     main_loop()
