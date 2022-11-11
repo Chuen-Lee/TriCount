@@ -55,7 +55,7 @@ def main_loop():
             cv2.ellipse(img,ellipse,(0,255,0),1)
         final_image = cv2.putText(img,"Beetles="+str(counter),(100,70),cv2.FONT_HERSHEY_SIMPLEX,1,(255,0,0),1,cv2.LINE_AA)
         st.image(final_image,width=300)
-        buf = BytesIO()
+        buf = BytesIO(final_image)
         img.save(buf, format="JPEG")
         byte_im = buf.getvalue()
         #cv2.imwrite(output,img)
