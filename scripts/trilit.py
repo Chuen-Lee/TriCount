@@ -2,6 +2,7 @@ import cv2
 import numpy as np
 import streamlit as st
 from PIL import Image
+from io import BytesIO
 
 logo = Image.open(r'scripts/logo.png')
 
@@ -54,12 +55,15 @@ def main_loop():
             cv2.ellipse(img,ellipse,(0,255,0),1)
         final_image = cv2.putText(img,"Beetles="+str(counter),(100,70),cv2.FONT_HERSHEY_SIMPLEX,1,(255,0,0),1,cv2.LINE_AA)
         st.image(final_image,width=300)
+        buf = BytesIO()
+        img.save(buf, format="JPEG")
+        byte_im = buf.getvalue()
         #cv2.imwrite(output,img)
 
 
     st.text("Number of Beetles = " + str(counter))
 
-    st.download_button(label = "Download Output", data = final_image, mime="image/png")
+    st.download_button(label = "Download Output", data = byte_im, mime="image/png")
 
 
 if __name__ == '__main__':
