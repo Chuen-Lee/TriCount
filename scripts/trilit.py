@@ -3,7 +3,7 @@ import numpy as np
 import streamlit as st
 from PIL import Image
 
-logo = Image.open(r'logo.jpg')
+logo = Image.open(r'scripts/logo.jpg')
 
 def main_loop():
     col1, col2 = st.columns( [0.8, 0.2])
