@@ -2,9 +2,6 @@ import cv2
 import numpy as np
 import streamlit as st
 from PIL import Image
-import cvlib as cv
-import argparse
-from numpy.lib.polynomial import poly
 
 def main_loop():
     st.title("TriCount App")
