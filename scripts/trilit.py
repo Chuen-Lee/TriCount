@@ -14,7 +14,7 @@ def main_loop():
         st.text("Consistent image height and lighting is essential for optimal results")
 
     with col2:
-        st.image(logo,  width=150)
+        st.image(logo,  width=50)
 
     binary = st.sidebar.slider("Binary", min_value=5, max_value=11, value=5,step=2)
     size = st.sidebar.slider("Size", min_value=0, max_value=50, value=5,step=1)
