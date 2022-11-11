@@ -3,10 +3,18 @@ import numpy as np
 import streamlit as st
 from PIL import Image
 
+logo = Image.open(r'...\logo.jpg')
+
 def main_loop():
-    st.title("TriCount App")
-    st.subheader("Counting beetles made easy with TriCount")
-    st.text("Consistent image height and lighting is essential for optimal results")
+    col1, col2 = st.columns( [0.8, 0.2])
+    with col1:
+        st.title("TriCount App")
+        st.text("Chuen")
+        st.subheader("Counting beetles made easy with TriCount")
+        st.text("Consistent image height and lighting is essential for optimal results")
+
+    with col2:
+        st.image(logo,  width=150)
 
     binary = st.sidebar.slider("Binary", min_value=5, max_value=11, value=5,step=2)
     size = st.sidebar.slider("Size", min_value=0, max_value=50, value=5,step=1)
