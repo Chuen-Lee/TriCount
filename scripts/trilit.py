@@ -49,7 +49,7 @@ def main_loop():
         #cv2.imwrite(output,img)
 
 
-    st.text("Number of Beetles =" + str(counter))
+    st.text("Number of Beetles = " + str(counter))
 
 
 if __name__ == '__main__':
