@@ -17,7 +17,6 @@ def main_loop():
     st.sidebar.title("  ")
     st.sidebar.title("  ")
     st.sidebar.title("  ")
-    st.sidebar.title("  ")
     st.sidebar.image(logo,use_column_width=True)
 
     image_file = st.file_uploader("Upload Your Image", type=['jpg', 'png', 'jpeg'])
