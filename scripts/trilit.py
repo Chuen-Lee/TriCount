@@ -3,8 +3,6 @@ import numpy as np
 import streamlit as st
 from PIL import Image
 
-logo = Image.open(r'scripts/logo.png')
-
 def main_loop():
     st.title("TriCount App")
     st.text("Author: Chuen")

@@ -1,5 +1,7 @@
 # <a href="https://tricount.streamlit.app/" target="_blank">TriCount</a>
 
+Author: Chuen
+
 ## Counting beetles made easy with TriCount
 
 ### Check out the <a href="https://tricount.streamlit.app/" target="_blank">TriCount</a> app
@@ -95,3 +97,5 @@ SOFTWARE.
 
 ## Acknowledgement:
 A huge thanks to George West for providing images of beetles for testing and development. Thanks to all that have helped test the app.
+
+<a href="https://chuen-lee.github.io/"> <img src="https://avatars.githubusercontent.com/u/92123911?v=4" alt="Demo_upload" width="600"/> </a>
