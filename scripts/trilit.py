@@ -11,15 +11,14 @@ def main_loop():
     st.subheader("Counting beetles made easy with TriCount")
     st.text("Consistent image height and lighting is essential for optimal results")
 
-    st.sidebar.title("Options")
-    binary = st.sidebar.slider("Distance between beetles", min_value=5, max_value=11, value=5,step=2)
-    size = st.sidebar.slider("Size of beetles", min_value=0, max_value=50, value=5,step=1)
-    st.sidebar.title("  ")
-    st.sidebar.title("  ")
-    st.sidebar.text(" ")
-    st.sidebar.text(" ")
-    st.sidebar.image(logo,use_column_width=True)
-    st.sidebar.write("https://chuen-lee.github.io/")
+    with st.sidebar.expander("Basic Options"):
+        binary = st.slider("Distance between beetles", min_value=5, max_value=11, value=5,step=2)
+        size = st.slider("Size of beetles", min_value=1, max_value=50, value=5,step=1)
+
+    with st.sidebar.expander("Advanced Options"):
+        resize = st.slider("Resize Image", min_value=300, max_value=5000, value=500,step=100)
+        threshold_constant = st.slider("Threshold", min_value=-30, max_value=30, value=4,step=1)
+        blur = st.slider("Blur Intensity", min_value=5, max_value=55, value=15,step=10)
 
     image_file = st.file_uploader("Upload Your Image", type=['jpg', 'png', 'jpeg'])
     if not image_file:
@@ -34,10 +33,10 @@ def main_loop():
     with col2:
         st.markdown('<p style="text-align: center;">After</p>',unsafe_allow_html=True)
         img = np.array(original_image)
-        img = cv2.resize(img,(500,500),interpolation = cv2.INTER_AREA)
+        img = cv2.resize(img,(resize,resize),interpolation = cv2.INTER_AREA)
         gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
-        gray_blur=cv2.GaussianBlur(gray,(15,15),0)
-        thresh = cv2.adaptiveThreshold(gray_blur,255,cv2.ADAPTIVE_THRESH_GAUSSIAN_C,cv2.THRESH_BINARY_INV,binary,4)
+        gray_blur=cv2.GaussianBlur(gray,(blur,blur),0)
+        thresh = cv2.adaptiveThreshold(gray_blur,255,cv2.ADAPTIVE_THRESH_GAUSSIAN_C,cv2.THRESH_BINARY_INV,binary,threshold_constant)
         kernel=np.ones((1,1),np.uint8)
         closing=cv2.morphologyEx(thresh,cv2.MORPH_CLOSE,kernel,iterations=10)
         result_img=closing.copy()
@@ -66,3 +65,26 @@ def main_loop():
 
 if __name__ == '__main__':
     main_loop()
+
+st.write("#")
+st.write("#")
+st.write("#")
+st.write("#")
+st.write("#")
+st.write("#")
+st.write("#")
+st.write("#")
+st.write("#")
+st.write("#")
+st.write("#")
+st.write("#")
+st.write("#")
+st.write("#")
+
+col1, col2, col3 = st.columns( [0.2, 0.6, 0.2])
+with col1:
+    st.write("#")
+with col2:
+    st.markdown("[![Chuen's logo](https://avatars.githubusercontent.com/u/92123911?v=4)](https://chuen-lee.github.io/)")
+with col3:
+    st.write("#")
