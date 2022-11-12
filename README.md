@@ -6,15 +6,15 @@ Check out the [TriCount](https://chuen-lee-tricount-scriptstrilit-37hlb0.streaml
 
 1. Upload an image.
 
- ![Demo_upload](/demo_images/demo_upload.png)
- 
 <p align="center">
 <img src="/demo_images/demo_upload.png" alt="Demo_upload" width="500"/>
 </p>
 
 2. Adjust the options to find suitable values for your purposes.
 
- ![Demo_options](/demo_images/demo_options.png)
+<p align="center">
+<img src="/demo_images/demo_options.png" alt="Demo_options" width="500"/>
+</p>
 
 ##A few tips
 
