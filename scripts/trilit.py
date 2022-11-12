@@ -16,6 +16,7 @@ def main_loop():
     size = st.sidebar.slider("Size of beetles", min_value=0, max_value=50, value=5,step=1)
     st.sidebar.title("  ")
     st.sidebar.title("  ")
+    st.sidebar.text(" ")
     st.sidebar.image(logo,use_column_width=True)
 
     image_file = st.file_uploader("Upload Your Image", type=['jpg', 'png', 'jpeg'])
