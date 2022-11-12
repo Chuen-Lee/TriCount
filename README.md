@@ -94,4 +94,4 @@ SOFTWARE.
 ## Citation:
 
 ## Acknowledgement:
-A huge thanks to George West for providing image of beetles for testing and development. Thanks to all that have helped test the app.
+A huge thanks to George West for providing images of beetles for testing and development. Thanks to all that have helped test the app.
