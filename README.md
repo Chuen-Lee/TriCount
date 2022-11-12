@@ -1,12 +1,21 @@
-
-
 # TriCount
 
 Counting beetles made easy with TriCount
 
 Check out the app at: https://chuen-lee-tricount-scriptstrilit-37hlb0.streamlit.app
 
-# Quick Start Guide
+1. Upload an image.
+
+2. Adjust the options to find suitable values for your purposes.
+
+##A few tips
+
+1. Use images taken from the same height (object should be similar size) and lighting (avoid shadows).
+2. Adjust "Size of beetles" first to find a reasonable count. Then, alter "Distance between beetles" to find the best reading.
+3. If both steps 1 and 2 were followed but still not working, go to "Advanced Options", try changing "Threshold".
+4. If all above fails, reach out to me.
+
+# Alternatively, use the python code. Quick Start Guide:
 ##clone this github repo:
 ```
 git clone https://github.com/Chuen-Lee/TriCount.git
