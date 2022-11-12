@@ -7,7 +7,7 @@ logo = Image.open(r'scripts/logo.png')
 
 def main_loop():
     st.title("TriCount App")
-    st.text("Chuen")
+    st.text("Author: Chuen")
     st.subheader("Counting beetles made easy with TriCount")
     st.text("Consistent image height and lighting is essential for optimal results")
 
