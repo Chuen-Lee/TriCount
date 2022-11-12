@@ -28,6 +28,8 @@ def main_loop():
     st.sidebar.write("# ")
     st.sidebar.write("# ")
     st.sidebar.write("# ")
+    st.sidebar.write("# ")
+    st.sidebar.write("# ")
     st.sidebar.write("Report an [issue](https://github.com/Chuen-Lee/TriCount/issues)")
 
     image_file = st.file_uploader("Upload Your Image", type=['jpg', 'png', 'jpeg'])
