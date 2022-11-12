@@ -1,4 +1,4 @@
-# TriCount
+# <a href="https://chuen-lee-tricount-scriptstrilit-37hlb0.streamlit.app" target="_blank">TriCount</a>
 
 ## Counting beetles made easy with TriCount
 
