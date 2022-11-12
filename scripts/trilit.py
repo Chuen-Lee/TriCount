@@ -74,12 +74,10 @@ st.write("#")
 st.write("#")
 st.write("#")
 
-col1, col2, col3 = st.columns( [0.2, 0.8, 0.2])
+col1, col2, col3 = st.columns( [0.2, 2, 0.2])
 with col1:
     st.write("#")
 with col2:
-    st.markdown("[![Chuen's logo](https://avatars.githubusercontent.com/u/92123911?v=4){width=250}](https://chuen-lee.github.io/)")
-
     st.markdown('''<a href="https://chuen-lee.github.io/"> <img src="https://avatars.githubusercontent.com/u/92123911?v=4" alt="Chuen's Logo" width="200"/> </a>''', unsafe_allow_html=True)
 
 with col3:
