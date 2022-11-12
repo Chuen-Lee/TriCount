@@ -11,8 +11,7 @@ def main_loop():
     st.subheader("Counting beetles made easy with TriCount")
     st.text("Consistent image height and lighting is essential for optimal results")
 
-    st.sidebar.title("Settings")
-    st.sidebar.text("Get better predictions")
+    st.sidebar.title("Options")
     binary = st.sidebar.slider("Distance between beetles", min_value=5, max_value=11, value=5,step=2)
     size = st.sidebar.slider("Size of beetles", min_value=0, max_value=50, value=5,step=1)
     st.sidebar.title("  ")
