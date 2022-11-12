@@ -19,11 +19,9 @@ def main_loop():
         blur = st.slider("Blur Intensity", min_value=5, max_value=55, value=15,step=10)
 
     image_file = st.file_uploader("Upload Your Image", type=['jpg', 'png', 'jpeg'])
+    image_file = st.camera_input("Take a picture")
     if not image_file:
         return None
-    picture = st.camera_input("Take a picture")
-    if not picture:
-        return none
 
     original_image = Image.open(image_file)
     col1, col2 = st.columns( [0.5, 0.5])
