@@ -73,10 +73,8 @@ st.write("#")
 st.write("#")
 st.write("#")
 st.write("#")
-st.write("#")
-st.write("#")
 
-col1, col2, col3 = st.columns( [0.25, 0.5, 0.25])
+col1, col2, col3 = st.columns( [0.3, 0.4, 0.3])
 with col1:
     st.write("#")
 with col2:
