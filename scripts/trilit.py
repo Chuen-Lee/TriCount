@@ -28,7 +28,7 @@ def main_loop():
 
     if image_file:
         original_image = Image.open(image_file)
-    if pic_file:
+    elif pic_file:
         original_image = Image.open(pic_file)
     else:
         original_image = Image.open("demo_images/10.jpg")
