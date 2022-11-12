@@ -7,13 +7,13 @@
 1. Upload an image.
 
 <p align="center">
-<img src="/demo_images/demo_upload.png" alt="Demo_upload" width="600"/>
+<img src="https://github.com/Chuen-Lee/TriCount/blob/main/demo_images/demo_upload.png?raw=true" alt="Demo_upload" width="600"/>
 </p>
 
 2. Adjust the options to find suitable values for your purposes.
 
 <p align="center">
-<img src="/demo_images/demo_options.png" alt="Demo_options" width="300"/>
+<img src="https://github.com/Chuen-Lee/TriCount/blob/main/demo_images/demo_options.png?raw=true" alt="Demo_options" width="300"/>
 </p>
 
 ## A few tips
