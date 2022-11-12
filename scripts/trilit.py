@@ -74,7 +74,7 @@ st.write("#")
 st.write("#")
 st.write("#")
 
-col1, col2, col3 = st.columns( [2, 1, 3])
+col1, col2, col3 = st.columns( [2, 1, 4])
 with col1:
     st.write("#")
 with col2:
