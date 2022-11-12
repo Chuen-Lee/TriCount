@@ -30,6 +30,8 @@ def main_loop():
         original_image = Image.open(image_file)
     if pic_file:
         original_image = Image.open(pic_file)
+    else:
+        original_image = Image.open("https://github.com/Chuen-Lee/TriCount/blob/main/demo_images/10.jpg?raw=true")
     col1, col2 = st.columns( [0.5, 0.5])
     with col1:
         st.markdown('<p style="text-align: center;">Before</p>',unsafe_allow_html=True)
