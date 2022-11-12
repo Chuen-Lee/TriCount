@@ -18,12 +18,12 @@ def main_loop():
         threshold_constant = st.slider("Threshold", min_value=-30, max_value=30, value=4,step=1)
         blur = st.slider("Blur Intensity", min_value=5, max_value=55, value=15,step=10)
 
-    if image_file = st.file_uploader("Upload Your Image", type=['jpg', 'png', 'jpeg'])
-        if not image_file:
-            return None
-    if image_file = st.camera_input("Take a picture")
-        if not image_file:
-            return none
+    image_file = st.file_uploader("Upload Your Image", type=['jpg', 'png', 'jpeg'])
+    if not image_file:
+        return None
+    image_file = st.camera_input("Take a picture")
+    if not image_file:
+        return none
 
     original_image = Image.open(image_file)
     col1, col2 = st.columns( [0.5, 0.5])
