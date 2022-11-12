@@ -24,7 +24,7 @@ def main_loop():
     image_file = st.file_uploader("Upload Your Image", type=['jpg', 'png', 'jpeg'])
     cam = st.checkbox("Turn Camera Off",value=True)
 
-    image_file = st.camera_input("Take a picture",disabled=cam)
+    image_file = st.camera_input("Take a picture",disabled=cam,label_visibility="hidden")
     if not image_file:
         return None
 
