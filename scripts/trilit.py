@@ -78,6 +78,6 @@ col1, col2, col3 = st.columns( [0.2, 0.8, 0.2])
 with col1:
     st.write("#")
 with col2:
-    st.markdown("[![Chuen's logo](https://avatars.githubusercontent.com/u/92123911?v=4)](https://chuen-lee.github.io/){width=250}")
+    st.markdown("[![Chuen's logo](https://avatars.githubusercontent.com/u/92123911?v=4){width=250}](https://chuen-lee.github.io/)")
 with col3:
     st.write("#")
