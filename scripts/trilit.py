@@ -18,8 +18,13 @@ def main_loop():
         threshold_constant = st.slider("Threshold", min_value=-30, max_value=30, value=4,step=1)
         blur = st.slider("Blur Intensity", min_value=5, max_value=55, value=15,step=10)
 
+
+
+
     image_file = st.file_uploader("Upload Your Image", type=['jpg', 'png', 'jpeg'])
-    image_file = st.camera_input("Take a picture")
+    cam = st.checkbox("Turn Camera Off",value=True)
+
+    image_file = st.camera_input(disabled=cam)
     if not image_file:
         return None
 
