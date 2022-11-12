@@ -79,5 +79,8 @@ with col1:
     st.write("#")
 with col2:
     st.markdown("[![Chuen's logo](https://avatars.githubusercontent.com/u/92123911?v=4){width=250}](https://chuen-lee.github.io/)")
+
+    st.markdown(<p align="center"> <a href="https://chuen-lee.github.io/"> <img src="https://avatars.githubusercontent.com/u/92123911?v=4" alt="Chuen's Logo" width="200"/> </a> </p>)
+
 with col3:
     st.write("#")
