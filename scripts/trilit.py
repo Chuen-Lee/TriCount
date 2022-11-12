@@ -24,12 +24,12 @@ def main_loop():
     image_file = st.file_uploader("Upload Your Image", type=['jpg', 'png', 'jpeg'])
     st.write("#")
     cam = st.checkbox("Turn Camera Off",value=True)
-    image_file = st.camera_input("Take a picture",disabled=cam,label_visibility="hidden")
-    if not image_file:
-        return None
-    cam = st.checkbox("Turn Camera Off",value=True)
+    pic_file = st.camera_input("Take a picture",disabled=cam,label_visibility="hidden")
 
-    original_image = Image.open(image_file)
+    if image_file:
+        original_image = Image.open(image_file)
+    if pic_file:
+        original_image = Image.open(pic_file)
     col1, col2 = st.columns( [0.5, 0.5])
     with col1:
         st.markdown('<p style="text-align: center;">Before</p>',unsafe_allow_html=True)
