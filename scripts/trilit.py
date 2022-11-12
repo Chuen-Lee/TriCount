@@ -65,7 +65,7 @@ if __name__ == '__main__':
     main_loop()
 
 st.write("#")
-st.write("#")
+st.write("#For examples on how to use this app, visit [TriCount GitHub](https://chuen-lee.github.io/TriCount/)")
 st.write("#")
 st.write("#")
 st.write("#")
