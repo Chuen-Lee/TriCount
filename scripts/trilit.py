@@ -22,11 +22,12 @@ def main_loop():
 
 
     image_file = st.file_uploader("Upload Your Image", type=['jpg', 'png', 'jpeg'])
+    st.write("#")
     cam = st.checkbox("Turn Camera Off",value=True)
-
     image_file = st.camera_input("Take a picture",disabled=cam,label_visibility="hidden")
     if not image_file:
         return None
+    cam = st.checkbox("Turn Camera Off",value=True)
 
     original_image = Image.open(image_file)
     col1, col2 = st.columns( [0.5, 0.5])
