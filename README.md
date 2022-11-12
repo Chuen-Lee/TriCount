@@ -53,4 +53,4 @@ python3 scripts/TriCount.py -i demo_images/10.jpg -o demo_images/out10.jpg
 ## Acknowledgement:
 
 
-<iframe src="https://tricount.streamlitapp.com/?embedded=true" width="600" height="450"></iframe>
+<iframe src="https://tricount.streamlitapp.com/?embedded=true" width=100% height=100%></iframe>
