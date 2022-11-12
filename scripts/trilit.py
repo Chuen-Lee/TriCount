@@ -55,15 +55,12 @@ def main_loop():
             cv2.ellipse(img,ellipse,(0,255,0),1)
         final_image = cv2.putText(img,"Beetles="+str(counter),(100,70),cv2.FONT_HERSHEY_SIMPLEX,1,(255,0,0),1,cv2.LINE_AA)
         st.image(final_image,width=300)
-        buf = BytesIO(final_image)
-        img.save(buf, format="JPEG")
-        byte_im = buf.getvalue()
-        #cv2.imwrite(output,img)
+        cv2.imwrite("output.png",final_image)
 
 
     st.text("Number of Beetles = " + str(counter))
 
-    st.download_button(label = "Download Output", data = byte_im, mime="image/png")
+    st.download_button(label = "Download Output", data = open('output.png', 'rb').read(),, mime="image/png")
 
 
 if __name__ == '__main__':
