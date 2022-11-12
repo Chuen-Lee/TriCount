@@ -5,10 +5,11 @@ from PIL import Image
 
 def main_loop():
     st.title("TriCount App")
-    st.text("Author: Chuen")
-    st.subheader("Counting beetles made easy with TriCount")
-    st.text("Consistent image height and lighting is essential for optimal results")
+    st.write("Author: Chuen")
+    st.write("#")
+    st.write("Consistent image height and lighting is essential for optimal results")
 
+    st.sidebar.title("Counting beetles made easy with TriCount")
     with st.sidebar.expander("Basic Options", expanded=True):
         binary = st.slider("Distance between beetles", min_value=5, max_value=11, value=5,step=2)
         size = st.slider("Size of beetles", min_value=1, max_value=50, value=5,step=1)
@@ -18,7 +19,11 @@ def main_loop():
         threshold_constant = st.slider("Threshold", min_value=-30, max_value=30, value=4,step=1)
         blur = st.slider("Blur Intensity", min_value=5, max_value=55, value=15,step=10)
 
-
+    with st.sidebar.expander("Usage"):
+        st.write("1. Upload an image or take a picture")
+        st.write("2. Adjust Basic Options")
+        st.write("3. If not working, adjust Advanced Options")
+        st.write("For more details, visit [TriCount GitHub](https://chuen-lee.github.io/TriCount/)")
 
 
     image_file = st.file_uploader("Upload Your Image", type=['jpg', 'png', 'jpeg'])
