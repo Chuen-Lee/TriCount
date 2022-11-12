@@ -21,8 +21,8 @@ def main_loop():
     image_file = st.file_uploader("Upload Your Image", type=['jpg', 'png', 'jpeg'])
     if not image_file:
         return None
-    image_file = st.camera_input("Take a picture")
-    if not image_file:
+    picture = st.camera_input("Take a picture")
+    if not picture:
         return none
 
     original_image = Image.open(image_file)
