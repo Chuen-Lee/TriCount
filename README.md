@@ -47,10 +47,10 @@ python3 scripts/TriCount.py -i {inputfile} -o {outputfile}
 ```
 python3 scripts/TriCount.py -i demo_images/10.jpg -o demo_images/out10.jpg
 ```
-#End:
+# End:
 
 Thank you for checking out TriCount!
 
-#Citation:
+# Citation:
 
-#Acknowledgement:
+# Acknowledgement:
