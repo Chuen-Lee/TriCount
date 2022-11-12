@@ -6,10 +6,6 @@
 
 1. Upload an image.
 
-<p align="center">
-<img src="https://github.com/Chuen-Lee/TriCount/blob/main/demo_images/demo_upload.png?raw=true" alt="Demo_upload" width="600"/>
-</p>
-
 2. Adjust the options to find suitable values for your purposes.
 
 <p align="center">
@@ -51,6 +47,53 @@ python3 scripts/TriCount.py -i demo_images/10.jpg -o demo_images/out10.jpg
 ## Citation:
 
 ## Acknowledgement:
+A huge thanks to George West for providing image of beetles for testing and development. Thanks to all that have helped test the app.
+
+## LICENSE
+
+Copyright (c) 2022 Chuen Zhang Lee
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+## Examples
+### Images used can be found in demo_images <a href="https://github.com/Chuen-Lee/TriCount/tree/main/demo_images" target="_blank">TriCount</a>
+
+### Example A - 10 Beetles
+
+Upload image <a href = "https://github.com/Chuen-Lee/TriCount/blob/main/demo_images/10.jpg?raw=true" target="_blank">10.jpg</a> to <a href="https://tricount.streamlit.app/" target="_blank">TriCount</a> app
+
+<p align="center">
+<img src="https://github.com/Chuen-Lee/TriCount/blob/main/demo_images/output/10_exampleA.png?raw=true" alt="Demo_upload" width="600"/>
+</p>
+
+```
+python3 scripts/TriCount.py -i demo_images/10.jpg -o demo_images/output/10_exampleA.png
+```
 
 
-<iframe src="https://tricount.streamlitapp.com/?embedded=true" width="600" height="450" scrolling="yes"></iframe>
+### Example B - 28 Beetles
+Upload image 28.jpg to <a href = "https://github.com/Chuen-Lee/TriCount/blob/main/demo_images/28.jpg?raw=true" target="_blank">28.jpg</a> <a href="https://tricount.streamlit.app/" target="_blank">TriCount</a> app
+
+<p align="center">
+<img src="https://github.com/Chuen-Lee/TriCount/blob/main/demo_images/output/28_exampleB.png?raw=true" alt="Demo_upload" width="600"/>
+</p>
+
+```
+python3 scripts/TriCount.py -i demo_images/28.jpg -o demo_images/output/28_exampleB.png
+```
