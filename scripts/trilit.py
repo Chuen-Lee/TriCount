@@ -25,6 +25,10 @@ def main_loop():
         st.write("3. If not working, adjust Advanced Options")
         st.write("For more details, visit [TriCount GitHub](https://chuen-lee.github.io/TriCount/)")
 
+    st.sidebar.write("# ")
+    st.sidebar.write("# ")
+    st.sidebar.write("# ")
+    st.sidebar.write("Report an [issue](https://github.com/Chuen-Lee/TriCount/issues)")
 
     image_file = st.file_uploader("Upload Your Image", type=['jpg', 'png', 'jpeg'])
     st.write("#")
