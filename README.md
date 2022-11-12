@@ -13,7 +13,7 @@ Check out the [TriCount](https://chuen-lee-tricount-scriptstrilit-37hlb0.streaml
 2. Adjust the options to find suitable values for your purposes.
 
 <p align="center">
-<img src="/demo_images/demo_options.png" alt="Demo_options" width="500"/>
+<img src="/demo_images/demo_options.png" alt="Demo_options" width="300"/>
 </p>
 
 ##A few tips
