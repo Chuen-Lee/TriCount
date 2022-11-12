@@ -6,18 +6,19 @@ from PIL import Image
 logo = Image.open(r'scripts/logo.png')
 
 def main_loop():
-    col1, col2 = st.columns( [0.8, 0.2])
-    with col1:
-        st.title("TriCount App")
-        st.text("Chuen")
-        st.subheader("Counting beetles made easy with TriCount")
-        st.text("Consistent image height and lighting is essential for optimal results")
+    st.title("TriCount App")
+    st.text("Chuen")
+    st.subheader("Counting beetles made easy with TriCount")
+    st.text("Consistent image height and lighting is essential for optimal results")
 
-    with col2:
-        st.image(logo,  width=50)
-
-    binary = st.sidebar.slider("Binary", min_value=5, max_value=11, value=5,step=2)
-    size = st.sidebar.slider("Size", min_value=0, max_value=50, value=5,step=1)
+    st.sidebar.title("Settings")
+    binary = st.sidebar.slider("Distance between beetles", min_value=5, max_value=11, value=5,step=2)
+    size = st.sidebar.slider("Size of beetles", min_value=0, max_value=50, value=5,step=1)
+    st.sidebar.title("  ")
+    st.sidebar.title("  ")
+    st.sidebar.title("  ")
+    st.sidebar.title("  ")
+    st.sidebar.image(logo,use_column_width=True)
 
     image_file = st.file_uploader("Upload Your Image", type=['jpg', 'png', 'jpeg'])
     if not image_file:
