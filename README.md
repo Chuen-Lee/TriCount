@@ -2,7 +2,7 @@
 
 ## Counting beetles made easy with TriCount
 
-### Check out the [TriCount](https://chuen-lee-tricount-scriptstrilit-37hlb0.streamlit.app) app
+### Check out the <a href="https://chuen-lee-tricount-scriptstrilit-37hlb0.streamlit.app" target="_blank" rel="noopener noreferrer">TriCount</a> app
 
 1. Upload an image.
 
