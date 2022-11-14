@@ -6,7 +6,7 @@ from PIL import Image
 def main_loop():
     st.title("TriCount App")
     st.write("Author: Chuen")
-    st.write("#")
+    st.write("#") #spacing
     st.write("Consistent image height and lighting is essential for optimal results")
 
     st.sidebar.title("Counting beetles made easy with TriCount")
@@ -25,12 +25,12 @@ def main_loop():
         st.write("3. If not working, adjust Advanced Options")
         st.write("For more details, visit [TriCount GitHub](https://chuen-lee.github.io/TriCount/)")
 
-    st.sidebar.write("# ")
-    st.sidebar.write("# ")
-    st.sidebar.write("# ")
-    st.sidebar.write("# ")
-    st.sidebar.write("# ")
-    st.sidebar.write("# ")
+    st.sidebar.write("# ") #spacing
+    st.sidebar.write("# ") #spacing
+    st.sidebar.write("# ") #spacing
+    st.sidebar.write("# ") #spacing
+    st.sidebar.write("# ") #spacing
+    st.sidebar.write("# ") #spacing
     st.sidebar.write("Report an [issue](https://github.com/Chuen-Lee/TriCount/issues)")
 
     image_file = st.file_uploader("Upload Your Image", type=['jpg', 'png', 'jpeg'])
@@ -79,25 +79,25 @@ def main_loop():
 
     st.text("Number of Beetles = " + str(counter))
 
-    st.download_button(label = "Download Output", data = open('output.png', 'rb').read(), mime="image/png")
+    st.download_button(label = "Download Output", data = open('output.png', 'rgb').read(), mime="image/png")
 
 
 if __name__ == '__main__':
     main_loop()
 
-st.write("#")
-st.write("#")
+st.write("#") #spacing
+st.write("#") #spacing
 st.write("### For examples on how to use this app, visit [TriCount GitHub](https://chuen-lee.github.io/TriCount/)")
-st.write("#")
-st.write("#")
-st.write("#")
+st.write("#") #spacing
+st.write("#") #spacing
+st.write("#") #spacing
 
 
 col1, col2, col3 = st.columns( [1, 1, 1])
 with col1:
-    st.write("#")
+    st.write("#") #spacing
 with col2:
     st.markdown('''<a href="https://chuen-lee.github.io/"> <img src="https://avatars.githubusercontent.com/u/92123911?v=4" alt="Chuen's Logo" width="200"/> </a>''', unsafe_allow_html=True)
 
 with col3:
-    st.write("#")
+    st.write("#") #spacing
