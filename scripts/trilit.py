@@ -73,6 +73,7 @@ def main_loop():
             ellipse = cv2.fitEllipse(cnt)
             cv2.ellipse(img,ellipse,(0,255,0),1)
         final_image = cv2.putText(img,"Beetles="+str(counter),(100,70),cv2.FONT_HERSHEY_SIMPLEX,1,(255,0,0),1,cv2.LINE_AA)
+        final_image = cv2.cvtColor(final_image,cv2.COLOR_BGR2RGB)
         st.image(final_image,width=300)
         cv2.imwrite("output.png",final_image)
 
