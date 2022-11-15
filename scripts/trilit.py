@@ -11,12 +11,12 @@ def main_loop():
 
     st.sidebar.title("Counting beetles made easy with TriCount")
     with st.sidebar.expander("Basic Options", expanded=True):
-        binary = st.slider("Distance between beetles", min_value=5, max_value=11, value=5,step=2)
+        binary = st.slider("Distance between beetles", min_value=1, max_value=11, value=5,step=2)
         size = st.slider("Size of beetles", min_value=1, max_value=50, value=5,step=1)
 
     with st.sidebar.expander("Advanced Options"):
         resize = st.slider("Resize Image", min_value=300, max_value=5000, value=500,step=100)
-        threshold_constant = st.slider("Threshold", min_value=-30, max_value=30, value=4,step=1)
+        threshold_constant = st.slider("Threshold", min_value=-30, max_value=30, value=3,step=1)
         blur = st.slider("Blur Intensity", min_value=5, max_value=55, value=15,step=10)
 
     with st.sidebar.expander("Usage"):
